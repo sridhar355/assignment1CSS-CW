@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML webpage structure example</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        article{
+            flex: 2;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        aside{
+            flex: 1;
+            padding: 50px 300px 50px 50px;
+            background-color: rgb(188, 188, 196);
+            margin-top: 30px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            padding: 50px 300px 50px 10px;
+        }
+        nav > section{
+            flex: 1;
+            height: 50px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+        <h1>body</h1>
+        <div style="background-color: rgb(238, 60, 113); color: black; padding: 50px 300px 50px 10px; ">
+            <h1>header</h1>
+        </div>
+        <nav style="background-color: rgb(238, 60, 113); height: 100px; margin-top: 20px;">
+            <p>nav</p>
+            <section style="background-color: white;"></section>
+            <section style="background-color: white;"></section>
+            <section style="background-color: white;"></section>
+        </nav>
+        <div class="container">
+            <article style="background-color: rgb(76, 76, 247); width: 300px; margin-top: 30px;  padding: 50px 300px 50px 50px;">
+                article
+                <section style="background-color: aqua; width: 200px; height: 30px; margin-top: 10px; padding: 10px 50px;">section</section>
+                <section style="background-color: aqua; width: 200px; height: 30px; margin-top: 10px; padding: 10px 50px;">section</section>
+                <section style="background-color: aqua; width: 200px; height: 30px; margin-top: 10px; padding: 10px 50px;">section</section>
+            </article>
+            <aside>
+                aside 
+                <section style="background-color: rgb(235, 245, 245); width: 200px; height: 30px; margin-top: 10px; padding: 10px 50px;"></section>
+                <section style="background-color: rgb(235, 245, 245); width: 200px; height: 30px; margin-top: 10px; padding: 10px 50px;"></section>
+            </aside>
+        </div>
+</body>
+<footer>
+    <div style="background-color: rgb(238, 60, 113); margin-top: 20px; height: 100px; padding: 50px 300px 50px 50px;">
+        <h1>footer</h1>
+    </div>
+</footer>
+</html>
